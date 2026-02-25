@@ -27,6 +27,16 @@ This includes identifying bugs, checking behaviour, and reducing the risk of use
 
 ## 3. Test Approach
 
+Testing will begin by using the site as a normal user without being logged in. The functionality of searching and viewing recipes will be tested to confirm that they work as expected.
+
+After that, negative testing will be performed by trying to break features using invalid inputs, empty fields, and unexpected behaviour.
+
+User registration and login will also be tested using both valid and invalid details.
+
+The same approach will be repeated while logged in, which will include testing recipe creation, viewing the logged-in user's recipes, editing, and deletion.
+
+Both positive (expected behaviour) and negative (invalid or unexpected behaviour) scenarios will be tested.
+
 ## 4. Risks
 
 ## 5. Entry and Exit Criteria
