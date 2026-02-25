@@ -39,4 +39,11 @@ Both positive (expected behaviour) and negative (invalid or unexpected behaviour
 
 ## 4. Risks
 
+- Users might not be able to register or log in if validation or backend logic fails.
+- The same user could potentially register multiple times if duplicate checks are not handled properly.
+- Users might be able to edit or delete recipes that are not theirs if authorization is not enforced correctly.
+- Invalid input could break the UI or cause display issues.
+- Data could be saved incorrectly or stored in the wrong format in the database.
+- There could be potential security risks, such as SQL injection, if input is not validated properly.
+
 ## 5. Entry and Exit Criteria
