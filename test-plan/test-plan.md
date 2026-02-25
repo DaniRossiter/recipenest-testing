@@ -14,7 +14,7 @@ This includes identifying bugs, checking behaviour, and reducing the risk of use
 - Searching recipes
 - Viewing recipe list and recipe details
 - Adding recipes (logged-in users)
-- Viewing my recipes (logged-in users)
+- Viewing recipes (logged-in users)
 - Editing recipes (logged-in users)
 - Deleting recipes (logged-in users)
 
@@ -47,3 +47,12 @@ Both positive (expected behaviour) and negative (invalid or unexpected behaviour
 - There could be potential security risks, such as SQL injection, if input is not validated properly.
 
 ## 5. Entry and Exit Criteria
+
+### Entry Criteria
+- The site is deployed and accessible.
+- The features listed in scope are available to test.
+
+### Exit Criteria
+- All planned tests have been run.
+- All bugs found have been logged.
+- A final review of the test results has been completed.
