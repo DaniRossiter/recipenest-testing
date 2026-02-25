@@ -96,6 +96,20 @@ Clicking "My Recipes" should redirect to the login page.
 Clicking "Add Recipe" should redirect to the login page.  
 No error messages should be displayed.
 
+### TC-006 - Login navbar link opens login page when logged out
+
+**Preconditions:**  
+User is not logged in.
+
+**Steps:**  
+1. Open the RecipeNest home page.  
+2. Click "Login" in the navbar.  
+3. Observe the page that loads.
+
+**Expected Result:**  
+The login page should be displayed.  
+No error messages should be shown.
+
 ## 2. Registration
 
 This section covers testing related to user registration.
