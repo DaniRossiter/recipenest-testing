@@ -28,6 +28,23 @@ Clicking "Browse Recipes" should navigate to the recipes page.
 Clicking "Login" should navigate to the login page.
 No error messages should be displayed.
 
+### TC-002 - Viewing a recipe displays correct details
+
+**Preconditions:**  
+User is not logged in.  
+At least one recipe exists in the system.
+
+**Steps:**  
+1. Open the RecipeNest home page.  
+2. Click the "Browse Recipes" button.  
+3. Click on any recipe from the list.  
+4. Observe the recipe details page.
+
+**Expected Result:**  
+The selected recipe's details page should load.  
+The recipe title, serving size, description, ingredients, and instructions should be displayed correctly.  
+No error messages should be shown.
+
 ## 2. Registration
 
 This section covers testing related to user registration.
