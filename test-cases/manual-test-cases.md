@@ -61,6 +61,23 @@ The user should be navigated back to the recipes list page.
 The list of recipes should be visible.
 No error messages should be displayed.
 
+### TC-004 - Navbar links navigate correctly when logged out
+
+**Preconditions:**  
+User is not logged in.
+
+**Steps:**  
+1. Open the RecipeNest home page.  
+2. Click "Recipes" in the navbar.  
+3. Observe the page that loads.  
+4. Click "Home" in the navbar.  
+5. Observe the page that loads.
+
+**Expected Result:**  
+Clicking "Recipes" should navigate to the recipes list page.  
+Clicking "Home" should navigate to the home page.  
+No error messages should be displayed.
+
 ## 2. Registration
 
 This section covers testing related to user registration.
