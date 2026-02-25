@@ -10,6 +10,24 @@ The test cases are based on the scope defined in the Test Plan and focus on the 
 
 This section covers testing for users who are not logged in.
 
+### TC-001 - Landing page buttons navigate correctly
+
+**Preconditions:**
+User is not logged in.
+
+**Steps:**
+1. Open the RecipeNest home page.
+2. Click the "Browse Recipes" button.
+3. Observe which page loads.
+4. Return to the home page.
+5. Click the "Login" button.
+6. Observe which page loads.
+
+**Expected Result:**
+Clicking "Browse Recipes" should navigate to the recipes page.
+Clicking "Login" should navigate to the login page.
+No error messages should be displayed.
+
 ## 2. Registration
 
 This section covers testing related to user registration.
