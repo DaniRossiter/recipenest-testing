@@ -45,6 +45,22 @@ The selected recipe's details page should load.
 The recipe title, serving size, description, ingredients, and instructions should be displayed correctly.  
 No error messages should be shown.
 
+### TC-003 - Back button returns user to recipe list
+
+**Preconditions:**
+User is not logged in.
+User is currently viewing a recipe details page.
+
+**Steps:**
+1. Scroll to the bottom of the recipe details page.
+2. Click the "Back" button.
+3. Observe the page that loads.
+
+**Expected Result:**
+The user should be navigated back to the recipes list page.
+The list of recipes should be visible.
+No error messages should be displayed.
+
 ## 2. Registration
 
 This section covers testing related to user registration.
