@@ -267,6 +267,21 @@ A browser validation message should appear indicating the email address is inval
 User remains on Register page.
 User is not logged in (navbar still shows "Login").
 
+### TC-014 - Register page login link navigates correctly
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+
+**Steps:**
+1. Open the Register page.
+2. Click the word "Login" in the text "Already have an account? Login".
+3. Observe which page loads.
+
+**Expected Result:**
+The Login page should be displayed.
+No error messages should be shown.
+
 ## 3. Login
 
 This section covers testing related to user login.
