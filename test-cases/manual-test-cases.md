@@ -429,6 +429,23 @@ Partial matches should be returned.
 Search should not be case sensitive.
 No error messages should be displayed.
 
+### TC-022 - Search displays no recipes when there are no matching titles
+
+**Preconditions:**
+User is on the Recipes page.
+At least one recipe exists in the system.
+
+**Steps:**
+1. Click inside the search input field in the navbar.
+2. Type text that does not match any existing recipe title (example: xyz123).
+3. Observe the recipes displayed.
+
+**Expected Result:**
+The Recipes page should remain visible.
+No recipe cards should be displayed if there are no matches.
+No error messages should appear.
+The page structure and styling should remain consistent with the normal Recipes page.
+
 ## 5. Logged-In Features
 
 This section covers functionality available only to authenticated users, which includes adding, viewing, editing and deleting recipes.
