@@ -347,6 +347,30 @@ The message "Email and password are required" should be displayed each time.
 User should remain on the Login page.
 User should not be logged in (navbar should still show "Login").
 
+### TC-018 - Login fails with invalid credentials
+
+**Preconditions:**
+User is logged out.
+User is on the Login page.
+At least one valid account exists in the system.
+
+**Steps:**
+1. Open the Login page.
+2. Enter a registered email address.
+3. Enter an incorrect password.
+4. Click the "Login" button.
+5. Observe the message shown under the Login button.
+6. Enter an unregistered email address.
+7. Enter any password.
+8. Click the "Login" button.
+9. Observe the message shown.
+
+**Expected Result:**
+Login should not submit.
+The message "Invalid email or password" should be displayed.
+User should remain on the Login page.
+User should not be logged in (navbar should still show "Login").
+
 ## 4. Search
 
 This section covers testing of recipe search functionality
