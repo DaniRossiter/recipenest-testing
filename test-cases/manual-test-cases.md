@@ -446,6 +446,24 @@ No recipe cards should be displayed if there are no matches.
 No error messages should appear.
 The page structure and styling should remain consistent with the normal Recipes page.
 
+### TC-023 - Clearing search restores full recipe list
+
+**Preconditions:**
+User is on the Recipes page.
+At least two recipes exist in the system.
+
+**Steps:**
+1. Click inside the search input field in the navbar.
+2. Type text that filters the recipe list.
+3. Observe that fewer recipes are displayed.
+4. Delete all text from the search input field.
+5. Observe the recipes displayed.
+
+**Expected Result:**
+The full list of recipes should be displayed again once the search input is cleared.
+No page refresh should occur.
+No error messages should appear.
+
 ## 5. Logged-In Features
 
 This section covers functionality available only to authenticated users, which includes adding, viewing, editing and deleting recipes.
