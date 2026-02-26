@@ -143,6 +143,24 @@ User should be logged in (navbar should show "Logout").
 Clicking "My Recipes" should open the My Recipes page.
 Clicking "Add Recipe" should open the Add Recipe page.
 
+### TC-008 - Registration requires all fields
+
+**Preconditions:**
+User is not logged in.
+User is on the Register Page.
+
+**Steps:**
+1. Open the Register page.
+2. Leave all input fields blank.
+3. Click the "Register" button.
+4. Observe any messages shown.
+
+**Expected Result:**
+Registration should not submit.
+The message "All fields are required" should be displayed.
+User should remain on the register page.
+User should not be logged in (navbar should still show "Login").
+
 ## 3. Login
 
 This section covers testing related to user login.
