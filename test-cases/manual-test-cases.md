@@ -282,6 +282,24 @@ User is on the Register page.
 The Login page should be displayed.
 No error messages should be shown.
 
+### TC-015 - Password field does not display plain text
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+
+**Steps:**
+1. Open the Register page.
+2. Click inside the "Password" field.
+3. Enter a sample password.
+4. Observe how the characters are displayed.
+5. Click inside the "Confirm Password" field.
+6. Enter a sample password.
+7. Observe how the characters are displayed.
+
+**Expected Result:**
+Characters entered into both the Password field and the Confirm Password field should not be visible as plain text.
+
 ## 3. Login
 
 This section covers testing related to user login.
