@@ -157,9 +157,31 @@ User is on the Register Page.
 
 **Expected Result:**
 Registration should not submit.
-The message "All fields are required" should be displayed.
+The message "All fields are required." should be displayed.
 User should remain on the register page.
 User should not be logged in (navbar should still show "Login").
+
+### TC-009 - Registration requires password complexity
+
+**Preconditions:**
+User is not logged in.
+User is on the Register Page.
+Username and email used are unique.
+
+**Steps:**
+1. Open the Register page.
+2. Enter a unique username.
+3. Enter a unique email.
+4. Enter an invalid password (example: abc123).
+5. Enter the same invalid password in Confirm Password.
+6. Click "Register".
+7. Observe the message shown under the input fields.
+
+**Expected Result:**
+Registration should not submit.
+The message "Password must be at least 8 characters long and include uppercase, lowercase, a number, and a special character." should be displayed.
+User remains on Register page.
+User is not logged in (navbar still shows "Login").
 
 ## 3. Login
 
