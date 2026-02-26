@@ -371,9 +371,63 @@ The message "Invalid email or password" should be displayed.
 User should remain on the Login page.
 User should not be logged in (navbar should still show "Login").
 
+### TC-019 - Login requires valid email format
+
+**Preconditions:**
+User is logged out.
+User is on the Login page.
+
+**Steps:**
+1. Open the Login page.
+2. Enter an invalid email address (example: test).
+3. Enter any password.
+4. Click the "Login" button.
+5. Observe what happens.
+
+**Expected Result:**
+The form should not submit.
+A browser validation message should appear indicating the email address is invalid.
+User should remain on the Login page.
+User should not be logged in (navbar should still show "Login").
+
 ## 4. Search
 
-This section covers testing of recipe search functionality
+This section covers testing related to searching recipes.
+
+### TC-020 - Search redirects to Recipes page when typing from Home page
+
+**Preconditions:**
+User is on the Home page.
+
+**Steps:**
+1. Click inside the search input field in the navbar.
+2. Type any text.
+3. Observe which page is displayed.
+
+**Expected Result:**
+The user should be redirected to the Recipes page automatically when typing in the search field.
+No error messages should be displayed.
+
+### TC-021 - Search filters recipe titles as user types on Recipes page
+
+**Preconditions:**
+User is on the Recipes page.
+At least two recipes exist with different titles.
+
+**Steps:**
+1. Click inside the search input field in the navbar.
+2. Type text that matches part of an existing recipe title.
+3. Observe the recipes shown.
+4. Continue typing additional letters to narrow the results.
+5. Change the case of the text entered (uppercase/lowercase).
+6. Observe the recipes shown.
+
+**Expected Result:**
+The recipe list should filter automatically as the user types.
+Only recipes with titles containing the entered text should be displayed.
+Partial matches should be returned.
+Search should not be case sensitive.
+No error messages should be displayed.
 
 ## 5. Logged-In Features
 
