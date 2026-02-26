@@ -249,6 +249,24 @@ The message "Email already registered" should be displayed.
 User remains on Register page.
 User is not logged in (navbar still shows "Login").
 
+### TC-013 - Registration requires valid email format
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+
+**Steps:**
+1. Open the Register page.
+2. Enter an invalid email address (example: test).
+3. Click the "Register" button.
+4. Observe what happens.
+
+**Expected Result:**
+The form should not submit.
+A browser validation message should appear indicating the email address is invalid.
+User remains on Register page.
+User is not logged in (navbar still shows "Login").
+
 ## 3. Login
 
 This section covers testing related to user login.
