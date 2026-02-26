@@ -183,6 +183,28 @@ The message "Password must be at least 8 characters long and include uppercase, 
 User remains on Register page.
 User is not logged in (navbar still shows "Login").
 
+### TC-010 - Registration requires matching passwords
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+Username and email used are unique.
+
+**Steps:**
+1. Open the Register page.
+2. Enter a unique username.
+3. Enter a unique email.
+4. Enter a valid password that meets the password requirements.
+5. Enter a different password in "Confirm Password".
+6. Click the "Register" button.
+7. Observe the message shown under the input fields.
+
+**Expected Result:**
+Registration should not submit.
+The message "Passwords do not match." should be displayed.
+User remains on Register page.
+User is not logged in (navbar still shows "Login").
+
 ## 3. Login
 
 This section covers testing related to user login.
