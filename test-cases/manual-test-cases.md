@@ -304,6 +304,25 @@ Characters entered into both the Password field and the Confirm Password field s
 
 This section covers testing related to user login.
 
+### TC-016 - Successful login redirects to My Recipes
+
+**Preconditions:**
+User is logged out.
+A valid account exists.
+
+**Steps:**
+1. Open the Login page.
+2. Enter a registered email address.
+3. Enter the correct password.
+4. Click the "Login" button.
+5. Observe which page loads.
+6. Observe the navbar.
+
+**Expected Result:**
+Login should succeed with no error messages.
+User should be redirected to the My Recipes page.
+User should be logged in (navbar should show "Logout").
+
 ## 4. Search
 
 This section covers testing of recipe search functionality
