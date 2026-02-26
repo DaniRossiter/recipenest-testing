@@ -114,6 +114,35 @@ No error messages should be shown.
 
 This section covers testing related to user registration.
 
+### TC-007 - Successful registration logs user in and redirects
+
+**Preconditions:**
+User is not logged in.
+The username does not already exist.
+The email does not already exist.
+The password used meets complexity requirements.
+
+**Steps:**
+1. Navigate to Login page.
+2. Click the “Register” link under "New here? Register".
+3. Enter a unique username.
+4. Enter a unique email.
+5. Enter a valid password that meets the password requirements.
+6. Enter the same password again in "Confirm Password".
+7. Click the "Register" button.
+8. Observe which page loads.
+9. Click "My Recipes" in the navbar.
+10. Observe which page loads.
+11. Click "Add Recipe" in the navbar.
+12. Observe which page loads.
+
+**Expected Result:**
+Registration should succeed with no error messages.
+User should be redirected to the recipes page.
+User should be logged in (navbar should show "Logout").
+Clicking "My Recipes" should open the My Recipes page.
+Clicking "Add Recipe" should open the Add Recipe page.
+
 ## 3. Login
 
 This section covers testing related to user login.
