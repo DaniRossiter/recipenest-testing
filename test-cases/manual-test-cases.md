@@ -205,6 +205,50 @@ The message "Passwords do not match." should be displayed.
 User remains on Register page.
 User is not logged in (navbar still shows "Login").
 
+### TC-011 - Registration requires unique username
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+An account already exists with a known username.
+
+**Steps:**
+1. Open the Register page.
+2. Enter a username that is already registered.
+3. Enter a unique email address.
+4. Enter a valid password that meets the password requirements.
+5. Enter the same password again in "Confirm Password".
+6. Click the "Register" button.
+7. Observe the message shown under the input fields.
+
+**Expected Result:**
+Registration should not submit.
+The message "Username already taken" should be displayed.
+User remains on Register page.
+User is not logged in (navbar still shows "Login").
+
+### TC-012 - Registration requires unique email address
+
+**Preconditions:**
+User is not logged in.
+User is on the Register page.
+An account already exists with a known email address.
+
+**Steps:**
+1. Open the Register page.
+2. Enter a unique username.
+3. Enter an email address that is already registered.
+4. Enter a valid password that meets the password requirements.
+5. Enter the same password again in "Confirm Password".
+6. Click the "Register" button.
+7. Observe the message shown under the input fields.
+
+**Expected Result:**
+Registration should not submit.
+The message "Email already registered" should be displayed.
+User remains on Register page.
+User is not logged in (navbar still shows "Login").
+
 ## 3. Login
 
 This section covers testing related to user login.
