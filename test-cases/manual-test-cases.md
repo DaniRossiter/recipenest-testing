@@ -323,6 +323,30 @@ Login should succeed with no error messages.
 User should be redirected to the My Recipes page.
 User should be logged in (navbar should show "Logout").
 
+### TC-017 - Login requires email and password
+
+**Preconditions:**
+User is logged out.
+User is on the Login page.
+
+**Steps:**
+1. Open the Login page.
+2. Leave the Email and Password fields blank.
+3. Click the "Login" button.
+4. Observe the message shown under the Login button.
+5. Enter any email address and leave Password blank.
+6. Click the "Login" button.
+7. Observe the message shown.
+8. Enter any password and leave Email blank.
+9. Click the "Login" button.
+10. Observe the message shown.
+
+**Expected Result:**
+Login should not submit.
+The message "Email and password are required" should be displayed each time.
+User should remain on the Login page.
+User should not be logged in (navbar should still show "Login").
+
 ## 4. Search
 
 This section covers testing of recipe search functionality
