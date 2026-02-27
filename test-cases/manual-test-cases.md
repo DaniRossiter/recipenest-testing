@@ -392,7 +392,7 @@ User should not be logged in (navbar should still show "Login").
 
 ## 4. Search
 
-This section covers testing related to searching recipes.
+This section covers global recipe search. Searching within My Recipes is covered under Logged-In Features.
 
 ### TC-020 - Search redirects to Recipes page when typing from Home page
 
@@ -466,4 +466,4 @@ No error messages should appear.
 
 ## 5. Logged-In Features
 
-This section covers functionality available only to authenticated users, which includes adding, viewing, editing and deleting recipes.
+This section covers functionality available only to authenticated users, which includes adding, viewing, searching, editing, and deleting recipes.
