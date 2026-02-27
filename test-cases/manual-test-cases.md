@@ -467,3 +467,21 @@ No error messages should appear.
 ## 5. Logged-In Features
 
 This section covers functionality available only to authenticated users, which includes adding, viewing, searching, editing, and deleting recipes.
+
+### TC-024 - Successful recipe creation redirects to Recipes page
+
+**Preconditions:**
+User is logged in.
+User is on the Add Recipe page.
+
+**Steps:**
+1. Enter text in all required fields (Title, Description, Ingredients, Instructions, Servings).
+2. Leave Image URL blank (optional).
+3. Click the "Add Recipe" button.
+4. Observe which page loads.
+5. Locate the newly created recipe in the list.
+
+**Expected Result:**
+The recipe should be created successfully with no error messages.
+The user should be redirected to the Recipes page.
+The newly created recipe should be visible in the recipe list.
