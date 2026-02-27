@@ -485,3 +485,21 @@ User is on the Add Recipe page.
 The recipe should be created successfully with no error messages.
 The user should be redirected to the Recipes page.
 The newly created recipe should be visible in the recipe list.
+
+### TC-025 - Add Recipe requires all required fields
+
+**Preconditions:**
+User is logged in.
+User is on the Add Recipe page.
+
+**Steps:**
+1. Leave one required field empty (for example, Title).
+2. Fill in the other required fields.
+3. Click the "Add Recipe" button.
+4. Observe what happens.
+
+**Expected Result:**
+The form should not submit.
+A browser validation message should appear stating "Please fill in this field."
+The user should remain on the Add Recipe page.
+No new recipe should be created.
