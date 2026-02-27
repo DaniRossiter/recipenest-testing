@@ -518,3 +518,24 @@ User has just created a new recipe successfully.
 The newly created recipe should be visible in the My Recipes list.
 No error messages should be displayed.
 
+### TC-027 - View button from My Recipes opens recipe details and returns to All Recipes
+
+**Preconditions:**
+User is logged in.
+User is on the My Recipes page.
+At least one recipe exists under the user’s account.
+
+**Steps:**
+1. Click the "View" button on one of the recipes.
+2. Observe the URL and page that loads.
+3. Observe the navbar active tab.
+4. Confirm the recipe details are displayed correctly.
+5. Click the "Back" button.
+6. Observe which page loads.
+
+**Expected Result:**
+The recipe details page should open.
+The navbar should show the user is on the Recipes tab.
+The recipe title, description, ingredients, and instructions should be displayed correctly.
+Only a "Back" button should be visible (no Edit or Delete buttons on the detail page).
+Clicking "Back" should return the user to the All Recipes page.
