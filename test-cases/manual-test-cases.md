@@ -503,3 +503,18 @@ The form should not submit.
 A browser validation message should appear stating "Please fill in this field."
 The user should remain on the Add Recipe page.
 No new recipe should be created.
+
+### TC-026 - Newly created recipe appears in My Recipes
+
+**Preconditions:**
+User is logged in.
+User has just created a new recipe successfully.
+
+**Steps:**
+1. Click "My Recipes" in the navbar.
+2. Look for the recipe that was just created.
+
+**Expected Result:**
+The newly created recipe should be visible in the My Recipes list.
+No error messages should be displayed.
+
