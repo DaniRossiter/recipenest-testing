@@ -45,6 +45,8 @@ Both positive (expected behaviour) and negative (invalid or unexpected behaviour
 - Invalid input could break the UI or cause display issues.
 - Data could be saved incorrectly or stored in the wrong format in the database.
 - There could be potential security risks, such as SQL injection, if input is not validated properly.
+- App is hosted on Render and may have cold-start delays. Allow extra time for API responses before marking a test as failed.
+- Authentication tokens may expire after a period of inactivity, which can require the user to log out and log back in before continuing testing.
 
 ## 5. Entry and Exit Criteria
 
